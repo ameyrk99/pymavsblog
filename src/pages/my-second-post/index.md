@@ -3,7 +3,7 @@ title: This is a test!
 date: "2018-05-06"
 ---
 
-Isn't markdown just awesome?
+Isn't python just awesome?
 
 Look at this code of python:
 ```python

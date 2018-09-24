@@ -14,40 +14,42 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
+        <Link
           style={{
-            ...scale(2.1),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            boxShadow: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
           }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            <div className="row">
-              <div className="col-lg-2">
-                <img src="icons/pythonicon.png"
-                  style={{
-                    width: '100%',
-                    // height: '100%',
-                  }}
-                />
-              </div>
-              <div className="col-lg-10">
-                PyMavs Blog
-              </div>
+          <div className="row">
+            <div className="col-lg-2">
+              <img src="icons/pythonicon.png"
+                style={{
+                  width: '100%',
+                  // height: '100%',
+                }}
+              />
             </div>
-          </Link>
-        </h1>
+            <div className="col-lg-7">
+              <h1
+                style={{
+                  ...scale(2.1),
+                  marginBottom: rhythm(1.5),
+                  marginTop: 0,
+                }}
+              >
+                Life Of Py </h1>
+            </div>
+            <div className="col-lg-3">
+              PyMavs Blog
+              </div>
+          </div>
+        </Link>
       )
     } else {
       header = (
-        <h3
+        <h1
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
@@ -62,21 +64,49 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            PyMavs Blog
+            <div className="row">
+              <div className="col-lg-1">
+                <img src="/icons/pythonicon.png"
+                  style={{
+                    width: '80%',
+                    // height: '100%',
+                  }}
+                />
+              </div>
+              <div className="col-lg-11">
+                Life Of Py
+              </div>
+            </div>
           </Link>
-        </h3>
+        </h1>
       )
     }
 
     panel = (
-      <div className="card">
-        <div className="card-header">
-          About
+      <div>
+        <div className="card">
+          <div className="card-header">
+            About
         </div>
-        <div className="card-body">
-          PyMavs is a new organization at the University of Texas at Arlington that focuses primary in Python. We pride ourselves in developing each other as better python programmers.
+          <div className="card-body">
+            Blog for PyMavs organization.<br /><br />
+            PyMavs is a new organization at the University of Texas at Arlington that focuses primary in Python. We pride ourselves in developing each other as better python programmers.
           <br /><br />
-          <a href="https://pymavs.github.io">Learn More!</a>
+            <a href="https://pymavs.github.io">Learn More!</a>
+          </div>
+        </div><br /><br />
+        <div className="card">
+          <div className="card-header">
+            Contact
+      </div>
+          <div className="card-body">
+            PyMavs at the University of Texas at Arlington<br/>
+            <span style={{fontSize: '80%'}}>Arlington, Texas</span>
+        <br /><br />
+            <a href="https://www.facebook.com/pymavs" target="_blank">facebook</a><br/>
+            <a href="https://pymavs.slack.com/join/shared_invite/enQtNDM5MDAxMTgzODEwLTE5ZDk1ZDAyZTIzYmY2MjcyNGVhODZlNTRjYTE2OTZlMjc3ODljZjMzOTU2N2E3MjkyMDA5ZTI2Y2NhZDMwYTE" target="_blank">slack</a><br/>
+            <a href="https://github.us18.list-manage.com/subscribe?u=ca60262c67543f2faeb7f0fc8&id=cb9f43de90" target="_blank">mailing-list</a>
+          </div>
         </div>
       </div>
     )
@@ -92,9 +122,14 @@ class Template extends React.Component {
       >
         <div className="row">
           <div className="col-lg-9">
-            {header}
+            {header}<br />
             <div className="container">
-              <div className="jumbotron">
+              <div className="jumbotron"
+                style={{
+                  paddingTop: '2%',
+                  paddingBottom: '2%'
+                }}
+              >
                 {children}
               </div>
             </div>
