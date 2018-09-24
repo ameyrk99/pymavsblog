@@ -1,8 +1,18 @@
-/* body {
-    /* background-color: #001122; */
-    /* background-size: 40px 40px, 40px 40px;
+body {
+    background-color: #001122;
+    background-size: 40px 40px, 40px 40px;
     background-image:
     repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 57px),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 57px); */
-    /* color: #ffffff;
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 57px);
+}
+
+
+/* body {
+    background: #FFE873;
+    background: -webkit-linear-gradient(to right, #001122, #FFE873);
+    background: linear-gradient(to right, #001122, #FFE873); 
+} */
+
+/* body {
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 } */

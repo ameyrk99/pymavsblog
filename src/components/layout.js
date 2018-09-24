@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
-import './layout.css'
 import './bootstrap.min.css'
+import './layout.css'
 
 class Template extends React.Component {
   render() {
@@ -37,11 +37,16 @@ class Template extends React.Component {
                   ...scale(2.1),
                   marginBottom: rhythm(1.5),
                   marginTop: 0,
+                  color: '#ffffff',
                 }}
               >
                 Life Of Py </h1>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3"
+              style={{
+                color: '#fff'
+              }}
+            >
               PyMavs Blog
               </div>
           </div>
@@ -60,7 +65,7 @@ class Template extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: '#fff',
             }}
             to={'/'}
           >
