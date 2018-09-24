@@ -64,19 +64,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            <div className="row">
-              <div className="col-lg-1">
-                <img src="/icons/pythonicon.png"
-                  style={{
-                    width: '80%',
-                    // height: '100%',
-                  }}
-                />
-              </div>
-              <div className="col-lg-11">
-                Life Of Py
-              </div>
-            </div>
+            Life of Py
           </Link>
         </h1>
       )
