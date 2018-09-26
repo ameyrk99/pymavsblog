@@ -1,9 +1,16 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# PyMavs Blog
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+add new blog in `src/pages/` by creating new folders and putting all the markdown, imgages, etc files related to that page in the folder
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+Each markdown file must contain at the start:
 
-## Running in development
-`gatsby develop`
+```markdown
+---
+title: SomeTitle
+date: "SomeDate (format: yyyy-mm-dd)"
+---
+```
+
+When you're done, preview using `gatsby develop` and depoly the website using `npm run deploy`. Your changes are pushed to the gh-pages branch. 
+
+__Push it to master once you depoly__.
